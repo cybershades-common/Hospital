@@ -3284,6 +3284,7 @@ h4,
 
 .services .d-block:hover .icon {
   background: var(--dark-green);
+  color: #fff;
 }
 
 .services .d-block:hover .icon:after {
@@ -3315,27 +3316,13 @@ h4,
   -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+    color: var(--dark-green);
 }
 
-.services .icon:after {
-  position: absolute;
-  bottom: -5px;
-  left: 5px;
-  right: 5px;
-  content: '';
-  height: 5px;
-  background: #6c5ce7;
-  border-radius: 0 0 3px 3px;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 
-.services .icon span {
-  font-size: 40px;
-  color: #6c5ce7;
+.services .icon i {
+  font-size: 1.5rem;
+
 }
 
 .services .media-body h3 {
@@ -3353,7 +3340,7 @@ h4,
 }
 
 .services .btn-custom:hover {
-  color: #6c5ce7;
+  color: #fff;
   border-color: #6c5ce7;
 }
 
@@ -4000,21 +3987,28 @@ textarea.form-control {
 
 .testimony-section .owl-nav {
   position: absolute;
-  top: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
+  top: 0;
+  bottom: 0;
+  left: -3rem;
+  right: -3rem;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   pointer-events: none;
+margin: auto;
 }
 
-.testimony-section .owl-nav button{
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  pointer-events: all;
-  outline: none;
+.testimony-section .owl-nav button {
+
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    pointer-events: all;
+    outline: none;
+    background: none;
+    border: 1px solid var(--bg-white);
+    cursor: pointer;
+
 }
 
 .testimony-section .owl-nav .owl-prev span:before,
@@ -4644,6 +4638,15 @@ textarea.form-control {
   flex-wrap: nowrap;
 }
 
-.testimony-section .owl-nav button{
 
+  .testimony-section .owl-nav button span {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    height: 2rem;
+    width: 100%;
+    position: relative;
+    top: -.125rem;
 }
