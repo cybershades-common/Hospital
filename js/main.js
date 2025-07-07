@@ -207,5 +207,26 @@
 
 	$('.appointment_time').timepicker();
 
+  // Mobile select box handler
+  $(document).ready(function() {
+      $('#mobile-select').on('change', function() {
+          var targetId = $(this).val();
+          var tabContent = $('#v-pills-tabContent');
+          var tabPanes = tabContent.find('.tab-pane');
+          
+          // Hide all tab panes
+          tabPanes.removeClass('show active');
+          
+          // Show selected tab
+          $(targetId).addClass('show active');
+          
+          // Update active tab indicator
+          var navTabs = $('#v-pills-tab');
+          var navLinks = navTabs.find('.nav-link');
+          
+          navLinks.removeClass('active');
+          navLinks.filter('[data-bs-target="' + targetId + '"]').addClass('active');
+      });
+  });
 
 })(jQuery);
