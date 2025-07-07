@@ -2958,7 +2958,7 @@ h4,
 @media (max-width: 991.98px) {
   .owl-carousel.home-slider .slider-item .slider-text h1 {
     font-size:2.5rem;
-    letter-spacing: 3px;
+    letter-spacing: 0;
   }
 }
 
@@ -4960,7 +4960,10 @@ textarea.form-control {
 
 @media (max-width: 768px) {
 html{
-  font-size: .875rem;
+  font-size: 14px;
+}
+.header-wrap> .container > .row {
+ align-items: center;
 }
 
   .innerpage  .sidebar .select-wrap{
@@ -4985,5 +4988,16 @@ html{
   .nav-tabs .nav-link.active {
     border-color: #007bff;
     background-color: #fff;
+  }
+  .ftco-appointment.bg-primary{
+    padding-top: 1rem !important;
+    padding-bottom:1rem !important;
+  }
+  .full-width-two-column .container-fluid .block-content{
+    padding: 3rem 1rem;
+  }
+  .ftco-counter{
+    padding: 2rem 1rem;
+    text-align: center;
   }
 }
